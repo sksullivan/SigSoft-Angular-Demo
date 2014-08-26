@@ -1,0 +1,18 @@
+<html ng-app="demo">
+<head>
+	<title>Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular.min.js"></script>
+	<script src="demo.js"></script>
+</head>
+<body ng-controller="mainpage">
+<button ng-click="show(1)">100-levels</button>
+<button ng-click="show(2)">200-levels</button>
+<button ng-click="show(3)">300-levels</button>
+<button ng-click="show(4)">400-levels</button>
+<button ng-click="show(-1)">All</button>
+<!--<input ng-model="search" placeholder="Search..." />-->
+<ul>
+	<li ng-repeat="result in results | filter: search">{{result}}</li>
+</ul>
+</body>
+</html>
